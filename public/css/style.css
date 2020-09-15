@@ -1,0 +1,26 @@
+.nav-link {
+    color: white;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.table-borderless tr, .table-borderless td, .table-borderless th {
+    border: 0;
+}
+
+.zoom:hover {
+    -webkit-transform: scale(1.6); 
+    -moz-transform: scale(1.6);
+    -o-transform: scale(1.6);
+    transform: scale(1.6);
+    z-index: 1999;
+}
+
+.zoom {
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+}
