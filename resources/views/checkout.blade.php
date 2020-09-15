@@ -29,7 +29,7 @@
                             <input value="0" name="psc" type="hidden">
                             <input value="0" name="pdc" type="hidden">
                             <input value="epay_payment" name="scd" type="hidden">
-                            <input value="{{$order->invoice_no}}" name="oid" type="hidden">
+                            <input value="{{$order->invoice_no}}" name="pid" type="hidden">
                             <input value="{{route('esewa.sucess')}}" type="hidden" name="su">
                             <input value="{{route('esewa.failure')}}" type="hidden" name="fu">
                             <input src="{{asset('esewa.png')}}" type="image" alt="submit" style="height:29px; Width:auto;">
