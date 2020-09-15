@@ -16,9 +16,9 @@ use PhpParser\Builder\Class_;
 
 Route::get('/products', [App\Http\Controllers\ProductController::class, 'index'])->name('product');
 Route::post('/checkout', [App\Http\Controllers\OrderController::class, 'index'])->name('checkout');
-Route::get('/esewa/sucess',[App\Http\Controllers\EsewaController::class,'sucess'])->name('esewa.sucess');
-Route::get('/esewa/failure',[App\Http\Controllers\EsewaController::class,'sucess'])->name('esewa.failure');
-
+Route::any('/esewa/sucess',[App\Http\Controllers\EsewaController::class,'sucess'])->name('esewa.sucess');
+Route::any('/esewa/failure',[App\Http\Controllers\EsewaController::class,'failure'])->name('esewa.failure');
+Route::get('/esewa/response', [App\Http\Controllers\EsewaController::class, 'response'])->name('payment.response');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

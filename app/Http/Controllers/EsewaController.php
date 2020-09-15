@@ -53,4 +53,8 @@ class EsewaController extends Controller
         }
         return false;
     }
+    public function response()
+    {
+        return view('response');
+    }
 }
